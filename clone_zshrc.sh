@@ -15,8 +15,10 @@ fi
 
 echo "Backing up current .zshrc..."
 if [ -f "$ZSHRC_TARGET" ]; then
-    cp "$ZSHRC_TARGET" "$ZSHRC_TARGET.backup.$(date +%Y%m%d_%H%M%S)"
-    echo "Backup created: $ZSHRC_TARGET.backup.$(date +%Y%m%d_%H%M%S)"
+    mkdir -p "$SCRIPT_DIR/backup"
+    BACKUP_FILE="$SCRIPT_DIR/backup/zshrc.backup.$(date +%Y%m%d_%H%M%S)"
+    cp "$ZSHRC_TARGET" "$BACKUP_FILE"
+    echo "Backup created: $BACKUP_FILE"
 fi
 
 echo "Copying zshrc_temp to ~/.zshrc..."

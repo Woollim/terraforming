@@ -63,7 +63,8 @@ if grep -q "ZSH_THEME=\"powerlevel10k/powerlevel10k\"" "$ZSHRC"; then
     print_warning ".zshrc에 powerlevel10k 테마가 이미 설정되어 있습니다"
 else
     # Backup original .zshrc
-    cp "$ZSHRC" "$ZSHRC.backup.$(date +%Y%m%d_%H%M%S)"
+    mkdir -p backup
+    cp "$ZSHRC" "backup/zsh.backup.$(date +%Y%m%d_%H%M%S)"
     
     # Update theme in .zshrc
     sed -i.tmp 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' "$ZSHRC"

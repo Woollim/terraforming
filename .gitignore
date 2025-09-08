@@ -1,0 +1,84 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.#*
+
+# Log files
+*.log
+logs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# Downloaded installers and binaries
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.exe
+*.msi
+
+# Cache directories
+.cache/
+cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node.js (if any Node tools are added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any Python tools are added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Homebrew
+Brewfile.lock.json
+
+# Custom temporary directories
+tmp/
+temp/
+
+# Backup directory
+backup/
